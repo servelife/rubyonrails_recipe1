@@ -1,28 +1,37 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example resulting project of following recipe 1: Ruby on Rails
 
-Things you may want to cover:
+Leverages heavily from chapter 1 of Michael Hartyl's Rails Tutorial (book.railstutorial.com)
 
-* Ruby version
+Requires:
+ - Install Ruby 2 (ruby-lang.org) - do use a package manager as suggested
+ - Install Rails 4 (rubyonrails.org)
+ - Install Ruby Gems (http://rubyforge.org/frs/?group_id=126)
+ - Install Postgresql for your environment
+ - Install Git
+ 
+Note: Recommend downloading & installing RubyMine from jetbrains.com. This is a great IDE and does add value beyond sublime & etc. 
+ 
+Recipe includes:
+ - Creating a new project (via RubyMine or the command line); If RubyMine, select rails application and configure for Postgresql
+ - Create new databases in postgres following the naming found within the database.yml file (<project_name>_development etc)
+ - Configure the database.yml with the appropriate postgresql username & password
+ - configure git on the local environment (git init)
+ - update of .gitignore with additional elements
+ - use git to add files & commit changes
+ - go to github.com and create a repository
+ - configure git with a remote (git remote add ...)
+ - push master to the remote
+ - check github to make sure the code pushed
 
-* System dependencies
+Optional: 
+ - open application.rb, update config.time_zone appropriately (or leave it alone if you like)
+ - open production.rb (in config > environments) and make the following modifications:
+    - uncomment config.assets.css_compressor = :sass
+    
+Note:
+  - I had to add a version number on the pg gem (in the gemfile) as there appears to be a bug with the current version
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Test:
+  - Run rails s in a command line and test by going to the specified url. The welcome aboard page should be visible
