@@ -2,7 +2,7 @@
 
 Example resulting project of following recipe 1: Ruby on Rails
 
-Leverages heavily from chapter 1 of Michael Hartyl's Rails Tutorial (book.railstutorial.com)
+Leverages heavily from chapter 1 of Michael Hartl's Rails Tutorial (book.railstutorial.com)
 
 Requires:
  - Install Ruby 2 (ruby-lang.org) - do use a package manager as suggested
